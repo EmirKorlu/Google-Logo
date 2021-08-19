@@ -1,0 +1,45 @@
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50%;
+}
+.logo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border-top: 50px solid #e34133;
+    border-left: 50px solid #f3b605;
+    border-bottom: 50px solid #32a350;
+    border-right: 50px solid #4081ec;
+}
+.logo::before {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 50px;
+    background: #4081ec;
+}
+.logo::after {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    content: "";
+    position: absolute;
+    border-top:100px solid transparent;
+    border-right: 100px solid #fff;
+    top: -50px;
+    left: 100px;
+    width: 0;
+    height: 0;
+}
